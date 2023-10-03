@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByJohan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b1b22;
+    }
+    .heart {
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: -20px 20px 150px #f20044;
+        animation: palpitar 0.6s linear infinite alternate;
+    }
+    
+    @keyframes palpitar{
+0%{transform: rotate(45deg)scale(1.10);}
+80% {transform: rotate(45deg)scale(1.10);}
+100% {transform: rotate(45deg)scale(0.8);}
+}
+    .heart::before {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        right: 50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f20044;
+    }
+    .heart::after {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f20044;
+    }
+    .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-340%, -200%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+</style>
+<style>
+.enlace-agrandado {
+font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado1 {
+font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado2 {
+font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado3 {
+font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado4 {
+font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado5 {
+ font-size: 30px;
+}
+</style>
+<style>
+.enlace-agrandado6 {
+ font-size: 30px;
+ }
+</style>
+</head>
+<body>
+<div class="heart"></div>
+<div class="text">HELLO</div>
+<center>
+<h1 class="titulo1">  JOHAN MARULANDA LEAL </h1>
+<b> <h3 class="texto"> ACTIVIDADES..</h3> </b> 
+<li> <a href="1Actividad.html" class="enlace-agrandado"> 1 Actividad <p> </a> </li> <br>
+<li> <a href="2actividad.html" class="enlace-agrandado1">2 Actividad <p> </a> </li> <br>
+<li> <a href="3Actividad.html" class="enlace-agrandado2">3 Actividad <p> </a> </li> <br>  
+<li> <a href="sudoku.html" class="enlace-agrandado3"> SUDOKU <p> </a> </li> <br>   
+<li> <a href="TAREACONCEPTOS.html" class="enlace-agrandado4">Tarea Conceptos <p> </a> </li> <br>
+<li> <a href="COMOINSTALARWINDOWS.html" class="enlace-agrandado5">PASOS PARA INSTALAR WINDOWS <p> </a> </li> <br>
+<li> <a href="FijosYpicos.html" class="enlace-agrandado6"> Fijos y  Picos <p> </a> </li> <br>     
+</body>
+</html>
